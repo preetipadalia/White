@@ -20,6 +20,7 @@ using TestStack.White.UIItems.WindowItems;
 using TestStack.White.WindowsAPI;
 using Action = TestStack.White.UIItems.Actions.Action;
 using Point = System.Windows.Point;
+using Window = TestStack.White.UIItems.WindowItems.Window;
 
 namespace TestStack.White.UIItems
 {

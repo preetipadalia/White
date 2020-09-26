@@ -144,7 +144,7 @@ namespace TestStack.White.ScreenMap
         private static DataContractSerializer CreateDataContractSerializer()
         {
             return new DataContractSerializer(
-                typeof(WindowItemsMap), new[]{ typeof(ControlTypeSurrogate)}, int.MaxValue, false, false, new WindowsAutomationTypesSurrogates());
+                typeof(WindowItemsMap), new[]{ typeof(ControlTypeSurrogate)});
         }
 
         private static FileStream CreateFileStream(string fileLocation)

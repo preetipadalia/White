@@ -7,9 +7,9 @@ using System.Windows.Automation;
 
 namespace TestStack.White.ScreenMap
 {
-    public class WindowsAutomationTypesSurrogates : IDataContractSurrogate
+    public class WindowsAutomationTypesSurrogates : ISerializationSurrogateProvider
     {
-        public virtual Type GetDataContractType(Type type)
+        public virtual Type GetSurrogateType(Type type)
         {
             if (type == typeof (ControlType))
                 return typeof (ControlTypeSurrogate);
@@ -69,5 +69,7 @@ namespace TestStack.White.ScreenMap
         {
             return typeDeclaration;
         }
+
+
     }
 }

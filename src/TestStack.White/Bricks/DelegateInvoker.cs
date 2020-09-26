@@ -9,7 +9,7 @@ namespace TestStack.White.Bricks
     /// This class builds an object to invoke a late-bound method, without using MethodInfo.InvokeAction and thus avoiding exceptions being wrapped 
     /// as target invocation exceptions.
     /// </summary>
-    internal static class DelegateInvoker
+    public static class DelegateInvoker
     {
         static T Get<T>(object o)
         {
@@ -19,7 +19,7 @@ namespace TestStack.White.Bricks
             return (T)o;
         }
 
-        internal interface IActionInvokerWrapper
+        public interface IActionInvokerWrapper
         {
             object Call(object[] args);
         }
